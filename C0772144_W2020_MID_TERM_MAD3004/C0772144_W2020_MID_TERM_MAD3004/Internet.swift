@@ -14,5 +14,8 @@ class Internet: Bill{
     init(providerName: String,InternetGBUsed: Double) {
         self.providerName = providerName
         self.InternetGBUsed = InternetGBUsed
+        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##String#>, totalBillAmmount: <#T##Double#>)
+        
     }
+  
 }

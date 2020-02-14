@@ -25,5 +25,14 @@ class Bill: IDisplay{
         self.totalBillAmmount = totalBillAmmount
     }
     
+    func setbillId()->Int{
+        return billId
+    }
+    func getbillId()->Int{
+        return billId
+    }
+   
+
+    
 }
 

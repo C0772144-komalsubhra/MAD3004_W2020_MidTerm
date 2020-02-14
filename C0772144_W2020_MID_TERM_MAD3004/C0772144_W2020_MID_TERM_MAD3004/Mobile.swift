@@ -18,6 +18,9 @@ class Mobile: Bill{
            self.MobileNumber = MobileNumber
            self.InternetGBUsed = InternetGBUsed
            self.MinuteUsed = MinuteUsed
+        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##String#>, totalBillAmmount: <#T##Double#>)
        }
+ 
+    
    
 }
