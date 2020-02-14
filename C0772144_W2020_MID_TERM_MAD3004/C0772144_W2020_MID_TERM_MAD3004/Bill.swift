@@ -9,8 +9,8 @@
 import Foundation
 class Bill: IDisplay{
    
-    func display() {
-        <#code#>
+    func display(){
+        print(self.billId,self.billDate,self.billType,self.totalBillAmmount)
     }
     
     var billId: Int
