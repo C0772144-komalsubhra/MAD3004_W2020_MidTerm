@@ -39,5 +39,11 @@ class Mobile: Bill{
        func getMinuteUsed()->Double{
            return MinuteUsed
        }
+     func setInternetGBUsed()->Double{
+          return InternetGBUsed
+      }
+    func getInternetGBUsed()->Double{
+        return InternetGBUsed
+    }
    
 }
