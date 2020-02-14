@@ -44,6 +44,12 @@ class Bill: IDisplay{
        func getbillType()->String{
            return billType
        }
+    func settotalBillAmmount()->Double{
+          return totalBillAmmount
+      }
+    func gettotalBillAmmount()->Double{
+        return totalBillAmmount
+    }
     
 }
 
