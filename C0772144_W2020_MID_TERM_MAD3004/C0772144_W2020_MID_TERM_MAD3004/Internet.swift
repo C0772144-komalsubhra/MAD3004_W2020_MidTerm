@@ -11,9 +11,17 @@ class Internet: Bill{
     
     var providerName: String
     var InternetGBUsed: Double
-    init() {
-       
+    init(providerName: String,InternetGBUsed: Double) {
+        self.providerName=providerName
+        self.InternetGBUsed=InternetGBUsed
         
     }
+    func setproviderName()->String{
+           return providerName
+       }
+       func getproviderName()->String{
+           return providerName
+       }
+    
   
 }
