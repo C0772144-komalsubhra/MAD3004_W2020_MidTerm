@@ -38,7 +38,12 @@ class Bill: IDisplay{
        func getbillDate()->Date{
            return billDate
        }
-
+    func setbillType()->String{
+           return billType
+       }
+       func getbillType()->String{
+           return billType
+       }
     
 }
 
