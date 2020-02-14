@@ -8,5 +8,16 @@
 
 import Foundation
 class Mobile: Bill{
+    var MobileModelName: String
+       var MobileNumber: Int
+       var MinuteUsed: Double
+       var InternetGBUsed: Double
+       
+       init(MobileModelName: String,MobileNumber: Int,MinuteUsed: Double,InternetGBUsed: Double){
+           self.MobileModelName = MobileModelName
+           self.MobileNumber = MobileNumber
+           self.InternetGBUsed = InternetGBUsed
+           self.MinuteUsed = MinuteUsed
+       }
    
 }
