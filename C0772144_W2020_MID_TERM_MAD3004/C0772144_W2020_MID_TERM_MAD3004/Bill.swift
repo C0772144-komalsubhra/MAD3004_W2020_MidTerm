@@ -32,6 +32,12 @@ class Bill: IDisplay{
         return billId
     }
    
+    func setbillDate()->Date{
+           return billDate
+       }
+       func getbillDate()->Date{
+           return billDate
+       }
 
     
 }
