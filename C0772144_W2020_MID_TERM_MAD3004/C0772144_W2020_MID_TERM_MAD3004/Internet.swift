@@ -9,5 +9,10 @@
 import Foundation
 class Internet: Bill{
     
-    
+    var providerName: String
+    var InternetGBUsed: Double
+    init(providerName: String,InternetGBUsed: Double) {
+        self.providerName = providerName
+        self.InternetGBUsed = InternetGBUsed
+    }
 }
