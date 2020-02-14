@@ -33,5 +33,11 @@ class Mobile: Bill{
        func getMobileNumber()->Int{
            return MobileNumber
        }
+    func setMinuteUsed()->Double{
+           return MinuteUsed
+       }
+       func getMinuteUsed()->Double{
+           return MinuteUsed
+       }
    
 }
