@@ -27,6 +27,11 @@ class Mobile: Bill{
          func getMobileModelName()->String{
              return MobileModelName
          }
-
+    func setMobileNumber()->Int{
+           return MobileNumber
+       }
+       func getMobileNumber()->Int{
+           return MobileNumber
+       }
    
 }
