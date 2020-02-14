@@ -21,6 +21,12 @@ class Mobile: Bill{
         super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##String#>, totalBillAmmount: <#T##Double#>)
        }
  
-    
+    func setMobileModelName()->String{
+             return MobileModelName
+         }
+         func getMobileModelName()->String{
+             return MobileModelName
+         }
+
    
 }
