@@ -21,29 +21,5 @@ class Mobile: Bill{
         super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##String#>, totalBillAmmount: <#T##Double#>)
        }
  
-    func setMobileModelName()->String{
-             return MobileModelName
-         }
-         func getMobileModelName()->String{
-             return MobileModelName
-         }
-    func setMobileNumber()->Int{
-           return MobileNumber
-       }
-       func getMobileNumber()->Int{
-           return MobileNumber
-       }
-    func setMinuteUsed()->Double{
-           return MinuteUsed
-       }
-       func getMinuteUsed()->Double{
-           return MinuteUsed
-       }
-     func setInternetGBUsed()->Double{
-          return InternetGBUsed
-      }
-    func getInternetGBUsed()->Double{
-        return InternetGBUsed
-    }
    
 }

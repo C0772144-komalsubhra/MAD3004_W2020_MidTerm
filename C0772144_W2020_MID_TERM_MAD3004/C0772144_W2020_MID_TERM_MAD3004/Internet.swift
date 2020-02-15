@@ -17,17 +17,5 @@ class Internet: Bill{
         super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##String#>, totalBillAmmount: <#T##Double#>)
         
     }
-    func setproviderName()->String{
-           return providerName
-       }
-       func getproviderName()->String{
-           return providerName
-       }
-    func setInternetGBUsed()->Double{
-           return InternetGBUsed
-       }
-    func getInternetGBUsed()->Double{
-        return InternetGBUsed
-    }
-  
+    
 }
