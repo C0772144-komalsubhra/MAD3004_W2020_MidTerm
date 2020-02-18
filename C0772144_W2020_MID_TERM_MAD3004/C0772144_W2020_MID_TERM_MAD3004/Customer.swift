@@ -49,7 +49,12 @@ self.lastName=lastName
         bills.updateValue(bill, forKey: billId)
     }
     
-   
+    func removeBill(billId:String)
+    {
+        bills.removeValue(forKey: billId)
+    }
+
+    
 
 }
    
