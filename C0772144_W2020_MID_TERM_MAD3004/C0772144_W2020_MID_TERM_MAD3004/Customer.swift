@@ -54,7 +54,20 @@ self.lastName=lastName
         bills.removeValue(forKey: billId)
     }
 
+    func total()->Double
+    {
+        if bills.count == 0
+        {
+            print("\t No bill found")
+        }
+        for i in bills
+        {
+        totalBillToPay += i.value.totalBillAmount
+        }
+        return totalBillToPay
+}
     
+   
 
 }
    
