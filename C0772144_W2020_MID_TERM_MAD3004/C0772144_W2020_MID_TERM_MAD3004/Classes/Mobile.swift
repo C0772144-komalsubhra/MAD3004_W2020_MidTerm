@@ -33,6 +33,15 @@ var ratePerMinute:Float
     {
         self.totalBillAmount=Double(minutesUsage*ratePerMinute+internetUsage*ratePerGb)
     }
-    
+    override func display() {
+           super.display()
+           print("\t Mobile Nanufacture Name : \(manufacturerName)")
+           print("\t Mobile Plan Name : \(planName)")
+           print("\t Mobile Number : \(mobileNumber)")
+           print("\t Mobile Internet Used : \(internetUsage.gb())")
+           print("\t Minuted Used: \(minutesUsage.min())")
+        
+           
+       }
 }
 
