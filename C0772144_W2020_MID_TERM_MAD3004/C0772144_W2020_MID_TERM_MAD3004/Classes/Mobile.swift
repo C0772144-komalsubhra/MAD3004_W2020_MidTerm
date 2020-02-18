@@ -29,6 +29,10 @@ var ratePerMinute:Float
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
    
-   
+    override func calculateTotal()
+    {
+        self.totalBillAmount=Double(minutesUsage*ratePerMinute+internetUsage*ratePerGb)
+    }
+    
 }
 
