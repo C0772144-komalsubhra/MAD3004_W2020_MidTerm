@@ -8,5 +8,9 @@
 
 import Foundation
 extension Int{
+func unit() -> String
+    {
+    return "\(self)units"
+    }
     
 }
