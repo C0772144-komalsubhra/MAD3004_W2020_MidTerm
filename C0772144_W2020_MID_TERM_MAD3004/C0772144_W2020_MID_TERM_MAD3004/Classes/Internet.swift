@@ -22,5 +22,11 @@ self.ratePerGb=ratePerGb
 }
 
 
+    override func calculateTotal()
+    {
+        self.totalBillAmount=Double(ratePerGb*internetGbUsed)
+    }
+    
+  
    
 }
