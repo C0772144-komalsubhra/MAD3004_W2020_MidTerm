@@ -17,31 +17,6 @@ var ratePerGb:Float
 var minutesUsage : Float
 var ratePerMinute:Float
 
-    init(billId:String,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Float,ratePerGb:Float,minutesUsage : Float,ratePerMinute:Float)
-    {
-    self.manufacturerName=manufacturerName
-    self.planName=planName
-    self.mobileNumber=mobileNumber
-    self.internetUsage=internetUsage
-    self.minutesUsage=minutesUsage
-    self.ratePerMinute=ratePerMinute
-    self.ratePerGb=ratePerGb
-    super.init(billId:billId,billDate:billDate,billType:billType)
-    }
    
-    override func calculateTotal()
-    {
-        self.totalBillAmount=Double(minutesUsage*ratePerMinute+internetUsage*ratePerGb)
-    }
-    override func display() {
-           super.display()
-           print("\t Mobile Nanufacture Name : \(manufacturerName)")
-           print("\t Mobile Plan Name : \(planName)")
-           print("\t Mobile Number : \(mobileNumber)")
-           print("\t Mobile Internet Used : \(internetUsage.gb())")
-           print("\t Minuted Used: \(minutesUsage.min())")
-        
-           
-       }
 }
 
