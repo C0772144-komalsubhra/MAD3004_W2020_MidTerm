@@ -27,7 +27,7 @@ override func display()
     {
         super.display()
         print("\t Name of Provider: \(providerName)")
-        print("\t Usage of Interget GB: \(internetGbUsed.gb())")
+        print("\t Usage of Internet GB: \(internetGbUsed.gb())")
     }
    
 }
