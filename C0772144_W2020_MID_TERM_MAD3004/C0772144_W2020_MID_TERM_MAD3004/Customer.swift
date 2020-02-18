@@ -44,7 +44,12 @@ self.lastName=lastName
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
-  
+    func addBill(bill: Bill, billId: String)
+    {
+        bills.updateValue(bill, forKey: billId)
+    }
+    
+   
 
 }
    
