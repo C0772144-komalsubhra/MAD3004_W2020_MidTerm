@@ -8,13 +8,6 @@
 
 import Foundation
 extension Float{
-    func gb() -> String
-    {
-        return "\(self)GB"
-    }
-    func min() -> String
-       {
-           return "\(self)minutes"
-       }
+ 
     
 }
