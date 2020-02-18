@@ -25,6 +25,10 @@ super.init(billId:billId,billDate:billDate,billType:billType)
     {
         self.totalBillAmount=Double(Float(unitConsumed)*ratePerUnit)
     }
-   
+    override func display() {
+        super.display()
+        print("\t Agency Name : \(agencyName)")
+        print("\t Units Consumed : \(unitConsumed.unit())")
+    }
 }
     
