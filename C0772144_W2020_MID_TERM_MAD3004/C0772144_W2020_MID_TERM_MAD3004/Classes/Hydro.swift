@@ -21,5 +21,10 @@ super.init(billId:billId,billDate:billDate,billType:billType)
     }
 
 
+ override func calculateTotal()
+    {
+        self.totalBillAmount=Double(Float(unitConsumed)*ratePerUnit)
+    }
+   
 }
     
