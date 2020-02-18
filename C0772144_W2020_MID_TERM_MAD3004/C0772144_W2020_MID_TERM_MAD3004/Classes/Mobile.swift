@@ -9,23 +9,23 @@
 import Foundation
 class Mobile:Bill
 {
-var manufacturerName : String
-var planName : String
-var mobileNumber : String
-var internetUsage : Float
-var ratePerGb:Float
-var minutesUsage : Float
-var ratePerMinute:Float
+     var manufacturerName : String
+     var planName : String
+     var mobileNumber : String
+     var internetUsage : Float
+     var ratePerGb:Float
+     var minutesUsage : Float
+     var ratePerMinute:Float
 
     init(billId:String,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Float,ratePerGb:Float,minutesUsage : Float,ratePerMinute:Float)
     {
-    self.manufacturerName=manufacturerName
-    self.planName=planName
-    self.mobileNumber=mobileNumber
-    self.internetUsage=internetUsage
-    self.minutesUsage=minutesUsage
-    self.ratePerMinute=ratePerMinute
-    self.ratePerGb=ratePerGb
+        self.manufacturerName=manufacturerName
+        self.ratePerMinute=ratePerMinute
+        self.ratePerGb=ratePerGb
+        self.planName=planName
+        self.mobileNumber=mobileNumber
+        self.internetUsage=internetUsage
+        self.minutesUsage=minutesUsage
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
    
@@ -37,7 +37,7 @@ var ratePerMinute:Float
            super.display()
            print("\t Mobile Nanufacture Name : \(manufacturerName)")
            print("\t Mobile Plan Name : \(planName)")
-           print("\t Mobile Number : \(mobileNumber)")
+           print("\t Mobile No. : \(mobileNumber)")
            print("\t Mobile Internet Used : \(internetUsage.gb())")
            print("\t Minuted Used: \(minutesUsage.min())")
         

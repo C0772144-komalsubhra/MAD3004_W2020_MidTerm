@@ -9,29 +9,25 @@
 import Foundation
 class Internet: Bill{
 
-var providerName:String
-var internetGbUsed:Float
-var ratePerGb:Float
+    var providerName:String
+    var internetGbUsed:Float
+    var ratePerGb:Float
 init(billId:String,billDate:String,billType:BillType,providerName:String,internetGbUsed:Float,ratePerGb:Float)
 {
-
-self.providerName=providerName
-self.internetGbUsed=internetGbUsed
-self.ratePerGb=ratePerGb
-    super.init(billId:billId,billDate:billDate,billType:billType)
+   self.providerName=providerName
+   self.internetGbUsed=internetGbUsed
+   self.ratePerGb=ratePerGb
+   super.init(billId:billId,billDate:billDate,billType:billType)
 }
-
-
-    override func calculateTotal()
+override func calculateTotal()
     {
         self.totalBillAmount=Double(ratePerGb*internetGbUsed)
     }
-    
-    override func display()
+override func display()
     {
         super.display()
-        print("\t ProviderName : \(providerName)")
-        print("\t InternetGB Used : \(internetGbUsed.gb())")
+        print("\t Name of Provider: \(providerName)")
+        print("\t Usage of Interget GB: \(internetGbUsed.gb())")
     }
    
 }

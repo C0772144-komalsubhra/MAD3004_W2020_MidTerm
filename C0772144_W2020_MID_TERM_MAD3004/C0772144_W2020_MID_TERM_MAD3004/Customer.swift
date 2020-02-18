@@ -8,23 +8,21 @@
 
 import Foundation
 class Customer{ 
-var customerId:Int
-var firstName:String
-var lastName:String
-    public var fullName: String{
+  var customerId:Int
+  var firstName:String
+  var lastName:String
+  public var fullName: String{
     return "\(firstName) \(lastName)"
-    }
-    lazy var bills = [String : Bill]()
-
-var emailAddress:String?
-   
-    var totalBillToPay:Double=0.00
+}
+  lazy var bills = [String : Bill]()
+  var emailAddress:String?
+  var totalBillToPay:Double=0.00
     
-init(customerId:Int,firstName:String,lastName:String,emailAddress:String)
-{
-self.customerId=customerId
-self.firstName=firstName
-self.lastName=lastName
+  init(customerId:Int,firstName:String,lastName:String,emailAddress:String)
+  {
+    self.customerId=customerId
+    self.firstName=firstName
+    self.lastName=lastName
     
     if emailValidation(email: emailAddress)
     {
@@ -34,16 +32,15 @@ self.lastName=lastName
      {
          print("Invalid Email ID for \(customerId) : \(emailAddress) ")
      }
-
-
 }
 
- func emailValidation(email:String) -> Bool {
+     func emailValidation(email:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
+    
     func addBill(bill: Bill, billId: String)
     {
         bills.updateValue(bill, forKey: billId)
@@ -65,15 +62,12 @@ self.lastName=lastName
         totalBillToPay += i.value.totalBillAmount
         }
         return totalBillToPay
-}
-    
-    
+    }
     
 
-
-        func display() {
+    func display() {
         print("Customer ID : \(customerId)")
-        print("Customer FullName : \(fullName)")
+        print("Customer Full Name : \(fullName)")
         print("Customer Email ID : \(String(describing: emailAddress))")
         print("\t ---- Bill Information ----")
         print("\t ******************************************")

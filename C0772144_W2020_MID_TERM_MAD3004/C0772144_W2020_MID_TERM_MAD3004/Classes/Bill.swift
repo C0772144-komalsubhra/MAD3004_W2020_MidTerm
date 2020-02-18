@@ -7,34 +7,38 @@
 //
 
 import Foundation
+
 enum BillType{
-case Mobile,Internet,Hydro}
+case Mobile,Internet,Hydro
+}
+
+
 class Bill:IDisplay
 {
-var billId:String
-var billDate:String
-var billType:BillType
-var totalBillAmount:Double=0.00
+    var billId:String
+    var billDate:String
+    var billType:BillType
+    var totalBillAmount:Double=0.00
 
 
-init(billId:String,billDate:String,billType:BillType)
-{
-self.billId=billId
-self.billDate=billDate.dateSet(input: billDate)
-self.billType=billType
-}
+    init(billId:String,billDate:String,billType:BillType)
+    {
+      self.billId=billId
+      self.billDate=billDate.dateSet(input: billDate)
+      self.billType=billType
+    }
     
  
     func calculateTotal()
     {
     }
     
-func display()
-{
-    print("\t Bill ID : \(billId)")
-           print("\t Bill Date : \(billDate)")
-           print("\t Bill Type : \(billType)")
-           print("\t Bill Amount : \(totalBillAmount.currency())")
+    func display()
+    {
+    print("\t BillID : \(billId)")
+    print("\t BillDate : \(billDate)")
+    print("\t BillType : \(billType)")
+    print("\t BillAmount : \(totalBillAmount.currency())")
     }
 }
     
