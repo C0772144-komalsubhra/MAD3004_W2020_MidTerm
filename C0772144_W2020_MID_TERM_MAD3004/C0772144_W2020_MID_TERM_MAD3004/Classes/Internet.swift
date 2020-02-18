@@ -15,6 +15,12 @@ var ratePerGb:Float
 init(billId:String,billDate:String,billType:BillType,providerName:String,internetGbUsed:Float,ratePerGb:Float)
 {
 
+self.providerName=providerName
+self.internetGbUsed=internetGbUsed
+self.ratePerGb=ratePerGb
+    super.init(billId:billId,billDate:billDate,billType:billType)
+}
+
 
    
 }
