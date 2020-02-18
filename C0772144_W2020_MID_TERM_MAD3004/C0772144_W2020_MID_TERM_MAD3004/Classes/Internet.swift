@@ -15,23 +15,6 @@ var ratePerGb:Float
 init(billId:String,billDate:String,billType:BillType,providerName:String,internetGbUsed:Float,ratePerGb:Float)
 {
 
-self.providerName=providerName
-self.internetGbUsed=internetGbUsed
-self.ratePerGb=ratePerGb
-    super.init(billId:billId,billDate:billDate,billType:billType)
-}
 
-
-    override func calculateTotal()
-    {
-        self.totalBillAmount=Double(ratePerGb*internetGbUsed)
-    }
-    
-    override func display()
-    {
-        super.display()
-        print("\t Provider Name : \(providerName)")
-        print("\t Internet GB Used : \(internetGbUsed.gb())")
-    }
    
 }
