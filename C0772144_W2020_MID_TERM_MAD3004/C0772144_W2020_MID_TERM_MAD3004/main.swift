@@ -23,10 +23,10 @@ import Foundation
  internet1.calculateTotal()
     var internet2 = Internet(billId: "I2", billDate: "05/28/2019", billType: .Internet, providerName: "Virgin", internetGbUsed: 35, ratePerGb: 2.5)
    internet2.calculateTotal()
-var in1=Insurance(billId:"INS01",billDate:"02/02/2020",billType:.Insurance,insuranceProviderName:"Costco Ltd",typeOfInsurance:.Car,startDate:"09/08/2019",endDate:"09/08/2021",totalDays:730,totalInstallmentToPay:700)
-   in1.calculateTotal()
+var insurance1=Insurance(billId:"INS01",billDate:"02/02/2020",billType:.Insurance,insuranceProviderName:"Costco Ltd",typeOfInsurance:.Car,startDate:"09/08/2019",endDate:"09/08/2021",totalDays:730,totalInstallmentToPay:700)
+   insurance1.calculateTotal()
      customer1.addBill(bill: hydro1, billId: hydro1.billId)
-customer1.addBill(bill: in1, billId: in1.billId)
+customer1.addBill(bill: insurance1, billId: insurance1.billId)
      customer1.addBill(bill: mobile1, billId: mobile1.billId)
      customer1.addBill(bill: internet1, billId: internet1.billId)
      customer2.addBill(bill: mobile2, billId: mobile2.billId)
@@ -38,11 +38,11 @@ customer1.addBill(bill: in1, billId: in1.billId)
      customer2.display()
      customer3.display()
 
-    var arrayOfCustomers = Array <Customer>()
-    arrayOfCustomers.append(customer1)
-    arrayOfCustomers.append(customer2)
+     var CustomerArray = Array <Customer>()
+    CustomerArray.append(customer1)
+    CustomerArray.append(customer2)
    func customersById(id:Int){
-    for i in arrayOfCustomers
+    for i in CustomerArray
        {
            if id==i.customerId
            {
