@@ -23,14 +23,17 @@ import Foundation
  internet1.calculateTotal()
     var internet2 = Internet(billId: "I2", billDate: "05/28/2019", billType: .Internet, providerName: "Virgin", internetGbUsed: 35, ratePerGb: 2.5)
    internet2.calculateTotal()
- 
-
+var in1=Insurance(billId:"INS01",billDate:"02/02/2020",billType:.Insurance,insuranceProviderName:"Costco Ltd",typeOfInsurance:.Car,startDate:"09/08/2019",endDate:"09/08/2021",totalDays:730,totalInstallmentToPay:700)
+   in1.calculateTotal()
      customer1.addBill(bill: hydro1, billId: hydro1.billId)
+customer1.addBill(bill: in1, billId: in1.billId)
      customer1.addBill(bill: mobile1, billId: mobile1.billId)
      customer1.addBill(bill: internet1, billId: internet1.billId)
      customer2.addBill(bill: mobile2, billId: mobile2.billId)
      customer2.addBill(bill: internet2, billId: internet2.billId)
      customer3.addBill(bill: hydro2, billId: hydro2.billId)
+    customer1.removeBill(billId:"hydro1")
+   
      customer1.display()
      customer2.display()
      customer3.display()

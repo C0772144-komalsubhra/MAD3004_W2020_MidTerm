@@ -9,7 +9,7 @@
 import Foundation
 
 enum BillType{
-case Mobile,Internet,Hydro
+case Mobile,Internet,Hydro,Insurance
 }
 
 
